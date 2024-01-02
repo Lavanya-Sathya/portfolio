@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 1rem;
+  line-height: 1.6;
+}
+:root {
+  --background-color1: #e5e5e5;
+  --background-color1a: #526d77;
+  --color1: black;
+}
+/* colors to use */
+/* #264653, #2a9d8f, #e9c46a, #f4a261, #e76f51 */
+#navbar {
+  background-color: var(--background-color1);
+  padding: 1.2rem 3rem;
+  position: fixed;
+}
+#navbar > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+#navbar > ul > li > a {
+  text-decoration: none;
+  color: var(--color1);
+}
+#welcome-section {
+  background-color: var(--background-color1a);
+  height: 80vh;
+  position: relative;
+}
+#welcomeHome {
+  border: 1px solid black;
+  background-color: var(--background-color1);
+  position: absolute;
+  height: 40vh;
+  width: 70vw;
+  color: var(--color1);
+  top: 25%;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects {
+  background-color: var(--background-color1);
+  color: var(--color1);
+  padding: 2rem 0;
+}
+#project-heading {
+  text-align: center;
+}
+#project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 1rem;
+  margin: 3rem 10rem;
+}
+@media screen and (max-width: 720px) {
+  #project-container {
+    margin: 1rem;
+  }
+}
+.project-image > img {
+  width: 330px;
+  height: 200px;
+  text-align: center;
+}
+.project-tile {
+  border: 1px solid var(--background-color1a);
+  border-radius: 5px;
+}
+.card-detail {
+  padding: 0.5rem;
+}
+.links {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
